@@ -1,1 +1,22 @@
-{\n  "name": "time-tracker",\n  "version": "1.0.0",\n  "description": "A simple daily time tracking application",\n  "type": "module",\n  "scripts": {\n    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",\n    "dev:server": "node --watch server/index.js",\n    "dev:client": "cd client && npm run dev",\n    "build": "cd client && npm run build",\n    "start": "node server/index.js"\n  },\n  "dependencies": {\n    "express": "^4.18.2",\n    "sqlite3": "^5.1.6",\n    "cors": "^2.8.5",\n    "body-parser": "^1.20.2"\n  },\n  "devDependencies": {\n    "concurrently": "^8.2.1"\n  }\n}\n
+{
+  "name": "time-tracker",
+  "version": "1.0.0",
+  "description": "A simple daily time tracking application",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "node --watch server/index.js",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
